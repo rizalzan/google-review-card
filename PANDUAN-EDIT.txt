@@ -1,0 +1,43 @@
+GOOGLE REVIEW CARD INDONESIA — PANDUAN EDIT UNTUK PEMULA
+
+FILE UTAMA
+- index.html : tulisan, judul, urutan section, harga, FAQ, dan nama file gambar.
+- style.css  : warna, ukuran teks, jarak, bentuk tombol, layout, dan tampilan mobile.
+- script.js  : interaksi menu mobile dan pilihan paket. Biasanya tidak perlu diedit.
+- assets/    : seluruh gambar yang dipakai landing page.
+
+CARA MEMBUKA DI VS CODE
+1. Extract ZIP ini ke folder yang mudah ditemukan, misalnya Documents.
+2. Buka VS Code.
+3. Pilih File > Open Folder.
+4. Pilih folder Google-Review-Card-VSCode hasil extract.
+5. Klik index.html untuk mengubah tulisan.
+6. Untuk melihat hasil, klik kanan index.html lalu pilih Open with Live Server (jika extension Live Server sudah terpasang), atau buka index.html lewat browser.
+
+CARA MENGUBAH TULISAN / HARGA
+- Buka index.html.
+- Tekan Ctrl+F, cari tulisan yang ingin diganti, lalu edit teksnya.
+- Harga saat ini ada di bagian hero dan bagian Paket & Harga. Jika mengubah harga, ubah di semua tempat yang relevan.
+- Simpan dengan Ctrl+S lalu refresh browser.
+
+CARA MENGGANTI GAMBAR
+1. Taruh gambar baru ke folder assets.
+2. Gunakan nama file sederhana, contoh hero-baru.webp.
+3. Di index.html, cari nama gambar lama seperti assets/01-HERO.webp.
+4. Ganti nama file tersebut menjadi assets/hero-baru.webp.
+5. Jangan menghapus gambar lama sampai gambar baru berhasil tampil.
+
+CARA MENGUBAH WARNA
+- Buka style.css.
+- Di bagian paling atas ada variabel warna:
+  --blue       = warna biru utama
+  --blue-dark  = warna biru tua
+  --ink        = warna teks utama
+  --muted      = warna teks sekunder
+- Ganti kode warna hex, misalnya #1769e0.
+
+PENTING SEBELUM DIPUBLIKASIKAN
+- Link tombol beli masih contoh (#checkout). Ganti href tombol dengan link checkout/WhatsApp yang benar.
+- Periksa semua gambar. Beberapa gambar lama di folder assets mungkin hanya placeholder dan perlu diganti dengan visual final.
+- Gambar AI bisa kurang akurat pada teks/QR produk. Untuk foto produk yang harus presisi, utamakan foto produk asli.
+- File ini dibuat agar mudah diedit, bukan agar desain tidak bisa berubah. Simpan salinan sebelum melakukan perubahan besar.
