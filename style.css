@@ -1464,7 +1464,7 @@ section.urgency-section .urgency-message {
     width: 100%;
     height: 100%;
 
-    object-fit: contain;
+    object-fit: cover;
 
     opacity: 0;
     visibility: hidden;
@@ -1648,44 +1648,144 @@ section.urgency-section .urgency-message {
     opacity: 1 !important;
 }
 
+/* UBAH WARNA KOTAK CTA */
+.cta-box {
+    background: #0b1b3a !important;
+}
+
 /* =========================================
-   MOBILE - PRODUCT SHOWCASE
-========================================= */
+   TEMPAT STRATEGIS
+   ========================================= */
 
-@media screen and (max-width: 768px) {
+.placement-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
 
-    .showcase-grid {
-        grid-template-columns: 1fr !important;
-        gap: 40px;
+.placement-section .section-header {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 50px;
+}
+
+.placement-section .section-header .badge-tag {
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.placement-section .section-header h2 {
+    margin: 0 0 18px;
+}
+
+.placement-section .section-header p {
+    margin: 0;
+    font-size: 18px;
+    color: #667085;
+}
+
+.placement-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.placement-card {
+    padding: 30px 22px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.placement-card:hover {
+    transform: translateY(-5px);
+    border-color: #1769e0;
+    box-shadow: 0 12px 30px rgba(23, 105, 224, 0.10);
+}
+
+.placement-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf2ff;
+    color: #1769e0;
+}
+
+.placement-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.placement-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #172033;
+}
+
+.placement-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #667085;
+}
+
+
+/* TABLET */
+@media (max-width: 1000px) {
+
+    .placement-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .showcase-content {
-        width: 100%;
-        max-width: none;
+}
+
+
+/* HP */
+@media (max-width: 600px) {
+
+    .placement-section {
+        padding: 65px 0;
     }
 
-    .showcase-content h2 {
-        font-size: 42px;
-        line-height: 1.05;
-        letter-spacing: -1.5px;
+    .placement-section .section-header {
+        margin-bottom: 35px;
     }
 
-    .showcase-description {
-        max-width: none;
-        font-size: 17px;
-        line-height: 1.7;
+    .placement-section .section-header h2 {
+        font-size: 28px;
+        line-height: 1.15;
     }
 
-    .showcase-gallery {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
+    .placement-section .section-header p {
+        font-size: 16px;
     }
 
-    .showcase-image {
-        width: 100%;
-        max-width: 520px;
-        margin: 0 auto;
+    .placement-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .placement-card {
+        display: grid;
+        grid-template-columns: 58px 1fr;
+        column-gap: 18px;
+        text-align: left;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .placement-icon {
+        grid-row: span 2;
+        margin: 0;
+    }
+
+    .placement-card h3 {
+        margin-bottom: 5px;
     }
 
 }

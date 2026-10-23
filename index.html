@@ -295,9 +295,9 @@
 
         /* URGENCY SECTION */
         .urgency-section {
-            padding: 60px 0;
-            background-color: var(--bg-white);
-        }
+    padding: 60px 0;
+    background-color: #0b1b3a;
+}
 
         .urgency-card {
             background-color: var(--bg-light);
@@ -1334,47 +1334,105 @@
         </div>
     </section>
 
-    <!-- SLIDER / CAROUSEL -->
-    <section class="slider-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge-tag">Tampil Profesional</span>
-                <h2>MUDAH DIPASANG. TAMPIL PROFESIONAL.</h2>
-                <p style="color: var(--text-muted);">Letakkan di tempat yang paling mudah dilihat pelanggan.</p>
-            </div>
+    <!-- TEMPAT PEMASANGAN -->
+<section class="placement-section">
+    <div class="container">
 
-            <div class="carousel-container" id="carousel">
-                <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
-                <button class="carousel-btn next" id="nextBtn">&#10095;</button>
-                
-                <div class="carousel-track" id="track">
-                    <div class="carousel-slide">
-                        <img src="meja 1.jpeg" alt="Meja Kasir Restoran" loading="lazy">
-                        <div class="carousel-caption">Meja Kasir</div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="meja 2.jpeg" alt="Area Pelayanan Café" loading="lazy">
-                        <div class="carousel-caption">Area Pelayanan</div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="meja 3.jpeg" alt="Front Desk Hotel" loading="lazy">
-                        <div class="carousel-caption">Front Desk Hotel</div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://lh3.googleusercontent.com/d/1A_placeholder_slide4" alt="Area Checkout Meja Pembayaran" loading="lazy">
-                        <div class="carousel-caption">Area Checkout</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-dots" id="dotsContainer">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
+        <div class="section-header">
+            <span class="badge-tag">TAMPIL PROFESIONAL</span>
+            <h2>MUDAH DIPASANG. TAMPIL PROFESIONAL.</h2>
+            <p>Letakkan di tempat yang paling mudah dilihat pelanggan.</p>
         </div>
-    </section>
+
+        <div class="placement-grid">
+
+            <!-- KASIR -->
+            <div class="placement-card">
+                <div class="placement-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="4" y="9" width="16" height="10" rx="2"
+                              stroke="currentColor" stroke-width="1.8"/>
+                        <rect x="7" y="5" width="10" height="4" rx="1"
+                              stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M8 13h8M9 16h2M13 16h2"
+                              stroke="currentColor" stroke-width="1.8"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Kasir</h3>
+                <p>Letakkan di area kasir agar pelanggan mudah melihat dan melakukan review.</p>
+            </div>
+
+            <!-- RESEPSIONIS -->
+            <div class="placement-card">
+                <div class="placement-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="8" r="3.2"
+                                stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M5.5 19c.7-3.2 3-5 6.5-5s5.8 1.8 6.5 5"
+                              stroke="currentColor" stroke-width="1.8"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Resepsionis</h3>
+                <p>Cocok ditempatkan di meja resepsionis agar mudah terlihat pelanggan.</p>
+            </div>
+
+            <!-- MEJA PEMBAYARAN -->
+            <div class="placement-card">
+                <div class="placement-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="3" y="6" width="18" height="12" rx="2"
+                              stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M3 10h18"
+                              stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M7 15h4"
+                              stroke="currentColor" stroke-width="1.8"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Meja Pembayaran</h3>
+                <p>Tempatkan dekat area pembayaran saat pelanggan selesai melakukan transaksi.</p>
+            </div>
+
+            <!-- PICKUP COUNTER -->
+            <div class="placement-card">
+                <div class="placement-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="4" y="8" width="16" height="12" rx="2"
+                              stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M8 8V6.5C8 5.7 8.7 5 9.5 5h5c.8 0 1.5.7 1.5 1.5V8"
+                              stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M4 12h16"
+                              stroke="currentColor" stroke-width="1.8"/>
+                    </svg>
+                </div>
+                <h3>Pickup Counter</h3>
+                <p>Ideal untuk café, restoran, dan bisnis yang menggunakan area pengambilan pesanan.</p>
+            </div>
+
+            <!-- CUSTOMER SERVICE -->
+            <div class="placement-card">
+                <div class="placement-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="8" r="3.2"
+                                stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M5.5 19c.7-3.2 3-5 6.5-5s5.8 1.8 6.5 5"
+                              stroke="currentColor" stroke-width="1.8"
+                              stroke-linecap="round"/>
+                        <path d="M4.5 12v2M19.5 12v2"
+                              stroke="currentColor" stroke-width="1.8"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Customer Service</h3>
+                <p>Letakkan di meja customer service agar pelanggan dapat mengaksesnya dengan mudah.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
     <!-- DARK DETAIL SECTION -->
     <section class="dark-section">
@@ -1449,7 +1507,7 @@
     <section class="cta-banner-section" id="checkout">
         <div class="container">
             <div class="cta-box">
-                <h2>JANGAN TUNGGU SAMPAI KOMPETITOR ANDA LEBIH DULU MEMBANGUN RIBUAN ULASAN.</h2>
+                <h2>JANGAN TUNGGU SAMPAI KOMPETITOR ANDA LEBIH DULU MEMBANGUN RATUSAN ULASAN DI GOOGLE.</h2>
                 <p>Mulai permudah pelanggan Anda memberikan review dari sekarang.</p>
                 <a href="#checkout" class="btn" style="padding: 16px 40px; font-size: 1.1rem;">BELI SEKARANG →</a>
                 
@@ -1465,7 +1523,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="badge-tag">FAQ</span>
-                <h2>MASIH ADA YANG MAU DITANYAKAN?</h2>
+                <h2>Pertanyaan Yang Sering Ditanyakan:</h2>
             </div>
 
             <div class="accordion">
@@ -1509,37 +1567,7 @@
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <span>Apakah desain kartunya bisa custom?</span>
-                        <span class="accordion-icon">+</span>
-                    </div>
-                    <div class="accordion-content">
-                        Untuk produk ini, kartu menggunakan desain yang telah ditentukan oleh Google Review Card Indonesia.
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <span>Apakah ada biaya bulanan?</span>
-                        <span class="accordion-icon">+</span>
-                    </div>
-                    <div class="accordion-content">
-                        Tidak ada biaya berlangganan untuk kartunya. Pembelian dilakukan satu kali.
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <span>Apakah produk bergaransi?</span>
-                        <span class="accordion-icon">+</span>
-                    </div>
-                    <div class="accordion-content">
-                        Ya, produk bergaransi.
-                    </div>
-                </div>
-            </div>
-        </div>
+               
     </section>
 
     <!-- FINAL CTA -->
