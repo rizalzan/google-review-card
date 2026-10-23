@@ -1786,3 +1786,56 @@ section.urgency-section .urgency-message {
     }
 
 }
+/* =================================
+   FIX HERO MOBILE - FINAL
+   ================================= */
+
+@media screen and (max-width: 767px) {
+
+    /* HERO */
+    .hero-section {
+        padding: 35px 20px 50px !important;
+    }
+
+    /* PAKSA JADI 1 KOLOM */
+    .hero-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 30px !important;
+    }
+
+    /* TEXT */
+    .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .hero-content h1 {
+        font-size: 2.6rem !important;
+        line-height: 1.05 !important;
+        letter-spacing: -1.5px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .hero-subtitle {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* GAMBAR */
+    .hero-visual {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-visual img {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+    }
+}
