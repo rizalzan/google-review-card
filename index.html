@@ -294,87 +294,84 @@
             object-fit: cover;
         }
         
-        /* =================================
-   FIX HERO MOBILE
+      /* =================================
+   HERO MOBILE - FIX FINAL
    ================================= */
 
 @media screen and (max-width: 767px) {
 
-    /* HERO */
     .hero-section {
-        padding: 35px 0 45px !important;
+        padding: 35px 20px 50px !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
     }
 
-    /* PAKSA JADI 1 KOLOM */
-    .hero-grid {
+    .hero-section .container.hero-grid {
         display: flex !important;
         flex-direction: column !important;
-        grid-template-columns: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
         gap: 30px !important;
-        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
-    /* TEKS HERO */
-    .hero-content {
+    .hero-section .hero-content {
         width: 100% !important;
-        max-width: none !important;
+        max-width: 100% !important;
         min-width: 0 !important;
-        grid-column: auto !important;
+        box-sizing: border-box !important;
+        order: 1 !important;
     }
 
-    .hero-content h1 {
+    .hero-section .hero-content h1 {
         width: 100% !important;
-        max-width: none !important;
-
+        max-width: 100% !important;
         font-size: 2.6rem !important;
         line-height: 1.05 !important;
         letter-spacing: -1.5px !important;
-
-        margin-bottom: 20px !important;
+        margin: 0 0 20px 0 !important;
+        box-sizing: border-box !important;
     }
 
-    /* DESKRIPSI JANGAN DIBUAT SEMPIT */
-    .hero-subtitle {
-        width: 100% !important;
-        max-width: none !important;
-
-        font-size: 1rem !important;
-        line-height: 1.6 !important;
-
-        margin-bottom: 20px !important;
-    }
-
-    /* HARGA */
-    .hero-pricing {
-        width: 100% !important;
-        margin-bottom: 20px !important;
-    }
-
-    /* FITUR */
-    .hero-features {
-        width: 100% !important;
-        margin-top: 18px !important;
-    }
-
-    /* GAMBAR HERO */
-    .hero-visual {
-        position: relative !important;
-
+    .hero-section .hero-subtitle {
         width: 100% !important;
         max-width: 100% !important;
-
-        margin: 0 !important;
-        padding: 8px !important;
-
-        grid-column: auto !important;
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 20px !important;
+        box-sizing: border-box !important;
     }
 
-    .hero-visual img {
+    .hero-section .hero-pricing {
         width: 100% !important;
-        height: auto !important;
+        box-sizing: border-box !important;
+    }
 
+    .hero-section .hero-features {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .hero-section .hero-visual {
+        position: relative !important;
         display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 8px !important;
+        order: 2 !important;
+        box-sizing: border-box !important;
+    }
 
+    .hero-section .hero-visual img {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
         object-fit: contain !important;
     }
 

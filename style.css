@@ -1786,36 +1786,42 @@ section.urgency-section .urgency-message {
     }
 
 }
-/* =================================
-   FIX HERO MOBILE - FINAL
-   ================================= */
+/* =========================================
+   FINAL FIX HERO MOBILE
+   ========================================= */
 
 @media screen and (max-width: 767px) {
 
-    /* HERO */
+    /* SECTION */
     .hero-section {
         padding: 35px 20px 50px !important;
+        overflow: hidden !important;
     }
 
-    /* PAKSA JADI 1 KOLOM */
+    /* PAKSA HERO 1 KOLOM */
     .hero-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: stretch !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        max-width: 100% !important;
         gap: 30px !important;
     }
 
-    /* TEXT */
+    /* TEKS */
     .hero-content {
+        display: block !important;
         width: 100% !important;
         max-width: 100% !important;
+        min-width: 0 !important;
     }
 
     .hero-content h1 {
+        width: 100% !important;
+        max-width: 100% !important;
         font-size: 2.6rem !important;
         line-height: 1.05 !important;
         letter-spacing: -1.5px !important;
-        margin-bottom: 20px !important;
+        margin: 0 0 20px 0 !important;
     }
 
     .hero-subtitle {
@@ -1823,19 +1829,27 @@ section.urgency-section .urgency-message {
         max-width: 100% !important;
         font-size: 1rem !important;
         line-height: 1.6 !important;
+        margin: 0 !important;
     }
 
-    /* GAMBAR */
+    /* GAMBAR TURUN KE BAWAH */
     .hero-visual {
+        position: relative !important;
         display: block !important;
         width: 100% !important;
         max-width: 100% !important;
-        margin: 0 auto !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        order: 2 !important;
+        transform: none !important;
     }
 
     .hero-visual img {
-        width: 100% !important;
-        height: auto !important;
         display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
     }
+
 }
