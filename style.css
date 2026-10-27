@@ -1853,3 +1853,161 @@ section.urgency-section .urgency-message {
     }
 
 }
+
+/* =========================================
+   PRODUCT SHOWCASE - MOBILE
+   ========================================= */
+
+@media screen and (max-width: 767px) {
+
+    /* SECTION */
+    .showcase-section {
+        padding: 60px 20px !important;
+        overflow: hidden !important;
+    }
+
+    /* CONTAINER */
+    .showcase-section .showcase-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: 35px !important;
+        margin: 0 auto !important;
+    }
+
+    /* =========================
+       TEKS
+       ========================= */
+
+    .showcase-section .showcase-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .showcase-section .badge-tag {
+        display: inline-block;
+        margin-bottom: 16px;
+        font-size: 11px;
+        letter-spacing: 1.2px;
+    }
+
+    .showcase-section .showcase-content h2 {
+        font-size: 32px !important;
+        line-height: 1.12 !important;
+        letter-spacing: -1px !important;
+        margin-bottom: 18px !important;
+    }
+
+    .showcase-section .showcase-description {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+        margin-bottom: 24px !important;
+    }
+
+    /* =========================
+       CHECKLIST
+       ========================= */
+
+    .showcase-section .checklist-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+    .showcase-section .checklist-item {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+    }
+
+    /* =========================
+       GALERI
+       ========================= */
+
+    .showcase-section .showcase-gallery {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .showcase-section .showcase-image {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        aspect-ratio: 1 / 1 !important;
+        overflow: hidden !important;
+        border-radius: 20px !important;
+    }
+
+    .showcase-section .showcase-slide {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        display: block !important;
+    }
+
+    /* PANAH GALLERY */
+    .showcase-section .gallery-prev,
+    .showcase-section .gallery-next {
+        width: 38px !important;
+        height: 38px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 24px !important;
+    }
+
+    .showcase-section .gallery-prev {
+        left: 10px !important;
+    }
+
+    .showcase-section .gallery-next {
+        right: 10px !important;
+    }
+
+    /* DOTS */
+    .showcase-section .showcase-dots {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 8px !important;
+        margin-top: 14px !important;
+    }
+
+    .showcase-section .showcase-dot {
+        width: 8px !important;
+        height: 8px !important;
+        padding: 0 !important;
+    }
+}
+
+/* =========================================
+   PRODUCT SHOWCASE - CENTER TEXT MOBILE
+   ========================================= */
+
+@media screen and (max-width: 767px) {
+
+    .showcase-content {
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .showcase-content .badge-tag {
+        display: inline-flex !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .showcase-content h2 {
+        text-align: center !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
