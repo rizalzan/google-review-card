@@ -1890,7 +1890,25 @@ if (showcaseGallery) {
 
 // TAMPILKAN FOTO PERTAMA
 showShowcaseSlide(0);
-        
+    
+// META PIXEL - TRACK SEMUA TOMBOL CHECKOUT
+document.addEventListener('click', function(event) {
+    const link = event.target.closest('a[href]');
+
+    if (!link) return;
+
+    const url = new URL(link.href, window.location.href);
+
+    if (
+        url.hostname === 'elzan531.form.id' &&
+        url.pathname === '/nfc-google-review'
+    ) {
+        if (typeof fbq === 'function') {
+            fbq('track', 'InitiateCheckout');
+        }
+    }
+});
+
     </script>
 </body>
 </html>
